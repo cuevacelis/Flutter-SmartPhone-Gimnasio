@@ -48,12 +48,12 @@ class _LoadingScreenState extends State<LoginScreen> {
 
     final loginButton = Padding(
       padding: EdgeInsets.symmetric(vertical: 16.0),
+      //Llamamos al Widget RaisedButton
       child: RaisedButton(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () {
-          //Navigator.of(context).pushNamed(MyHomePage);
           Navigator.push(
               context,
               MaterialPageRoute(

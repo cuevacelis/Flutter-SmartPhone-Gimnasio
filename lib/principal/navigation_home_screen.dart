@@ -4,7 +4,7 @@ import 'package:best_flutter_ui_templates/principal/app_theme.dart';
 import 'package:best_flutter_ui_templates/custom_drawer/drawer_user_controller.dart';
 import 'package:best_flutter_ui_templates/custom_drawer/home_drawer.dart';
 //Navigation
-import 'package:best_flutter_ui_templates/principal/home_screen.dart';
+//import 'package:best_flutter_ui_templates/principal/home_screen.dart';
 import 'package:best_flutter_ui_templates/principal/help_screen.dart';
 import 'package:best_flutter_ui_templates/principal/feedback_screen.dart';
 import 'package:best_flutter_ui_templates/principal/invite_friend_screen.dart';
@@ -22,7 +22,7 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
   @override
   void initState() {
     drawerIndex = DrawerIndex.HOME;
-    screenView = const MyHomePage();
+    screenView = LoginScreen();
     super.initState();
   }
 

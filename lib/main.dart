@@ -45,6 +45,29 @@ class HexColor extends Color {
     7)Canvas
     8)Button Center
   C3:Navegabilidad(8)
+    1)
+    2)
+    3)
+    4)
+    5)
+    6)
+    7)
+    8)
   C4:Interfaces(6)
+    1)Login
+    2)Home
+    3)Ayuda
+    4)Invitar a un Amigo
+    5)Compartir App
+    6)Acerca De
+    7)MenuFitness
   C5:Widgets(8)
+    1)
+    2)
+    3)
+    4)
+    5)
+    6)
+    7)
+    8)
 */
