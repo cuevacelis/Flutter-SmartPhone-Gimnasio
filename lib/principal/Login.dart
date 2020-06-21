@@ -1,88 +1,99 @@
 import 'package:flutter/material.dart';
+import 'package:best_flutter_ui_templates/principal/app_theme.dart';
+import 'package:best_flutter_ui_templates/fitness_app/fitness_app_home_screen.dart';
 
-
-class LoginPage extends StatefulWidget {
+class LoginScreen extends StatefulWidget {
   @override
-  State createState() => new LoginPageState();
+  _LoadingScreenState createState() => _LoadingScreenState();
 }
 
-class LoginPageState extends State<LoginPage>
-    with SingleTickerProviderStateMixin {
-  AnimationController _iconAnimationController;
-  Animation<double> _iconAnimation;
-
+class _LoadingScreenState extends State<LoginScreen> {
   @override
   void initState() {
     super.initState();
-    _iconAnimationController = new AnimationController(
-        vsync: this, duration: new Duration(milliseconds: 500));
-    _iconAnimation = new CurvedAnimation(
-        parent: _iconAnimationController, curve: Curves.easeOut);
-    _iconAnimation.addListener(() => this.setState(() {}));
-    _iconAnimationController.forward();
   }
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-        backgroundColor: Colors.greenAccent,
-        body: new Stack(
-          fit: StackFit.expand,
+    final logo = Hero(
+      tag: 'hero',
+      child: CircleAvatar(
+        backgroundColor: Colors.transparent,
+        radius: 48.0,
+        child: Image.asset('assets/images/helpImage.png'),
+      ),
+    );
+
+    final email = TextFormField(
+      keyboardType: TextInputType.emailAddress,
+      autofocus: false,
+      initialValue: 'cuevacelis@hotmail.com',
+      decoration: InputDecoration(
+        hintText: 'Email',
+        contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
+      ),
+    );
+
+    final password = TextFormField(
+      autofocus: false,
+      initialValue: 'placeholder contraseña :v',
+      obscureText: true,
+      decoration: InputDecoration(
+        hintText: 'Password',
+        contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
+      ),
+    );
+
+    final loginButton = Padding(
+      padding: EdgeInsets.symmetric(vertical: 16.0),
+      child: RaisedButton(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(24),
+        ),
+        onPressed: () {
+          //Navigator.of(context).pushNamed(MyHomePage);
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context)=> FitnessAppHomeScreen(),
+              ),
+          );
+        },
+        padding: EdgeInsets.all(12),
+        color: Colors.lightBlueAccent,
+        child: Text('Iniciar Sesión', style: TextStyle(color: Colors.white)),
+      ),
+    );
+
+    final forgotLabel = FlatButton(
+      child: Text(
+        'Olvidaste tu contraseña?',
+        style: TextStyle(color: Colors.black54),
+      ),
+      onPressed: () {},
+    );
+
+
+    return Scaffold(
+      backgroundColor: AppTheme.nearlyWhite,
+      body: Center(
+        child: ListView(
+          shrinkWrap: true,
+          padding: EdgeInsets.only(left: 24.0, right: 24.0),
           children: <Widget>[
-            new Image(
-              image: new AssetImage("assets/girl.jpeg"),
-              fit: BoxFit.cover,
-              color: Colors.black87,
-              colorBlendMode: BlendMode.darken,
-            ),
-            new Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                new FlutterLogo(
-                  size: _iconAnimation.value * 100,
-                ),
-                new Form(
-                    child: new Theme(
-                        data: new ThemeData(
-                            brightness: Brightness.dark,
-                            primarySwatch: Colors.teal,
-                            inputDecorationTheme: new InputDecorationTheme(
-                                labelStyle: new TextStyle(
-                                    color: Colors.teal, fontSize: 20.0))),
-                        child: new Container(
-                          padding: const EdgeInsets.all(60.0),
-                          child: new Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: <Widget>[
-                              new TextFormField(
-                                decoration: new InputDecoration(
-                                    labelText: "Enter Email"),
-                                keyboardType: TextInputType.emailAddress,
-                              ),
-                              new TextFormField(
-                                decoration: new InputDecoration(
-                                    labelText: "Enter Password"),
-                                keyboardType: TextInputType.text,
-                                obscureText: true,
-                              ),
-                              new Padding(
-                                padding: const EdgeInsets.only(top: 40.0),
-                              ),
-                              new MaterialButton(
-                                minWidth: 100.0,
-                                height: 40.0,
-                                color: Colors.teal,
-                                textColor: Colors.white,
-                                child: new Icon(Icons.arrow_forward),
-                                onPressed: () => {},
-                                splashColor: Colors.redAccent,
-                              )
-                            ],
-                          ),
-                        )))
-              ],
-            )
+            logo,
+            SizedBox(height: 48.0),
+            email,
+            SizedBox(height: 8.0),
+            password,
+            SizedBox(height: 24.0),
+            loginButton,
+            forgotLabel
           ],
-        ));
+        ),
+      ),
+    );
   }
 }

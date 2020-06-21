@@ -8,6 +8,7 @@ import 'package:best_flutter_ui_templates/principal/home_screen.dart';
 import 'package:best_flutter_ui_templates/principal/help_screen.dart';
 import 'package:best_flutter_ui_templates/principal/feedback_screen.dart';
 import 'package:best_flutter_ui_templates/principal/invite_friend_screen.dart';
+import 'package:best_flutter_ui_templates/principal/Login.dart';
 
 class NavigationHomeScreen extends StatefulWidget {
   @override
@@ -49,12 +50,13 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
     );
   }
 
+  //Lista del Menu Lateral->Interaccion
   void changeIndex(DrawerIndex drawerIndexdata) {
     if (drawerIndex != drawerIndexdata) {
       drawerIndex = drawerIndexdata;
       if (drawerIndex == DrawerIndex.HOME) {
         setState(() {
-          screenView = const MyHomePage();
+          screenView = LoginScreen();
         });
       } else if (drawerIndex == DrawerIndex.Help) {
         setState(() {
@@ -68,8 +70,10 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
         setState(() {
           screenView = InviteFriend();
         });
-      } else {
-        //para mas contenido :V
+      } else if (drawerIndex == DrawerIndex.About) {
+        setState(() {
+          screenView = LoginScreen();
+        });
       }
     }
   }

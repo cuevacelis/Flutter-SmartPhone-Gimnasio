@@ -43,6 +43,7 @@ class HexColor extends Color {
     5)FadeTransition
     6)BoxShadow 
     7)Canvas
+    8)Button Center
   C3:Navegabilidad(8)
   C4:Interfaces(6)
   C5:Widgets(8)

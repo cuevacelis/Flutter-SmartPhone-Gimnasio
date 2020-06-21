@@ -261,11 +261,11 @@ class _HomeDrawerState extends State<HomeDrawer> {
 
 enum DrawerIndex {
   HOME,
-  FeedBack,
   Help,
+  FeedBack,
+  Invite,
   Share,
   About,
-  Invite,
   Testing,
 }
 
