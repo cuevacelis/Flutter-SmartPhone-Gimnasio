@@ -1,8 +1,10 @@
-import 'package:best_flutter_ui_templates/fitness_app_reducido/models/tabIcon_data.dart';
-import 'package:best_flutter_ui_templates/fitness_app_reducido/traning/training_screen.dart';
+import 'fintness_app_theme.dart';
 import 'package:flutter/material.dart';
 import 'bottom_navigation_view/bottom_bar_view.dart';
-import 'fintness_app_theme.dart';
+//Iconos
+import 'package:best_flutter_ui_templates/fitness_app_reducido/models/tabIcon_data.dart';
+//Navigate
+import 'package:best_flutter_ui_templates/fitness_app_reducido/traning/training_screen.dart';
 import 'my_diary/my_diary_screen.dart';
 
 class FitnessAppHomeScreen extends StatefulWidget {
@@ -63,9 +65,10 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen> with Ticker
   Widget barraNavegacionAbajo() {
     return Column(
       children: <Widget>[
-        const Expanded(
+        const Expanded(//Con esto pongo la lista abajo
           child: SizedBox(),
         ),
+        //Widget de Navbar Descargado de Internet y personalizado
         BottomBarView(
           tabIconsList: tabIconsList,
           addClick: () {},
