@@ -21,6 +21,7 @@ class _HelpScreenState extends State<HelpScreen> {
         child: Scaffold(
           backgroundColor: AppTheme.nearlyWhite,
           body: Column(
+            //Widget de Texto e Imagenes
             children: <Widget>[
               Container(
                 padding: EdgeInsets.only(
@@ -32,7 +33,7 @@ class _HelpScreenState extends State<HelpScreen> {
               Container(
                 padding: const EdgeInsets.only(top: 8),
                 child: Text(
-                  'How can we help you?',
+                  'Como podemos ayudarte?',
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -42,7 +43,7 @@ class _HelpScreenState extends State<HelpScreen> {
               Container(
                 padding: const EdgeInsets.only(top: 16),
                 child: const Text(
-                  'It looks like you are experiencing problems\nwith our sign up process. We are here to\nhelp so please get in touch with us',
+                  'Estamos aquí para ayudarlo, así que póngase en contacto con nosotros.',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 16,
@@ -75,7 +76,7 @@ class _HelpScreenState extends State<HelpScreen> {
                             child: Padding(
                               padding: const EdgeInsets.all(4.0),
                               child: Text(
-                                'Chat with Us',
+                                'Envia un Mensaje',
                                 style: TextStyle(
                                   fontWeight: FontWeight.w500,
                                   color: Colors.white,

@@ -8,7 +8,7 @@ import 'package:best_flutter_ui_templates/custom_drawer/home_drawer.dart';
 import 'package:best_flutter_ui_templates/principal/help_screen.dart';
 import 'package:best_flutter_ui_templates/principal/feedback_screen.dart';
 import 'package:best_flutter_ui_templates/principal/invite_friend_screen.dart';
-import 'package:best_flutter_ui_templates/principal/Login.dart';
+import 'package:best_flutter_ui_templates/principal/Login_screen.dart';
 
 class NavigationHomeScreen extends StatefulWidget {
   @override
@@ -39,6 +39,7 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
             screenIndex: drawerIndex,
             drawerWidth: MediaQuery.of(context).size.width * 0.75,
             onDrawerCall: (DrawerIndex drawerIndexdata) {
+              //Interaccion
               changeIndex(drawerIndexdata);
               //devolución de llamada desde el cajón para reemplazar la pantalla según lo requerido el usuario al pasar DrawerIndex (índice Enum)
             },
@@ -70,9 +71,13 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
         setState(() {
           screenView = InviteFriend();
         });
+      } else if (drawerIndex == DrawerIndex.Share) {
+        setState(() {
+          screenView = InviteFriend();
+        });
       } else if (drawerIndex == DrawerIndex.About) {
         setState(() {
-          screenView = LoginScreen();
+          screenView = InviteFriend();
         });
       }
     }

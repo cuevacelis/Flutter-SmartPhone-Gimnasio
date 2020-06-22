@@ -21,6 +21,7 @@ class _InviteFriendState extends State<InviteFriend> {
         child: Scaffold(
           backgroundColor: AppTheme.nearlyWhite,
           body: Column(
+            //Widget de Texto e Imagenes
             children: <Widget>[
               Container(
                 padding: EdgeInsets.only(
@@ -32,7 +33,7 @@ class _InviteFriendState extends State<InviteFriend> {
               Container(
                 padding: const EdgeInsets.only(top: 8),
                 child: Text(
-                  'Invite Your Friends',
+                  'Invita a tus amigos',
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -42,7 +43,7 @@ class _InviteFriendState extends State<InviteFriend> {
               Container(
                 padding: const EdgeInsets.only(top: 16),
                 child: const Text(
-                  'Are you one of those who makes everything\n at the last moment?',
+                  'Invita a todos tus amigos y se feliz.oc',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 16,
@@ -84,7 +85,7 @@ class _InviteFriendState extends State<InviteFriend> {
                                 Padding(
                                   padding: const EdgeInsets.all(4.0),
                                   child: Text(
-                                    'Share',
+                                    'Compartir',
                                     style: TextStyle(
                                       fontWeight: FontWeight.w500,
                                       color: Colors.white,

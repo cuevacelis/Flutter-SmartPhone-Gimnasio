@@ -35,7 +35,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                   Container(
                     padding: const EdgeInsets.only(top: 8),
                     child: Text(
-                      'Your FeedBack',
+                      'Tu retroalimentación',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -45,14 +45,15 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                   Container(
                     padding: const EdgeInsets.only(top: 16),
                     child: const Text(
-                      'Give your best time for this moment.',
+                      'Da tu mejor momento para este momento.',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 16,
                       ),
                     ),
                   ),
-                  _buildComposer(),
+                  //Widget Caja de Texto
+                  _cajaDeTexto(),
                   Padding(
                     padding: const EdgeInsets.only(top: 16),
                     child: Center(
@@ -80,7 +81,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                               child: Padding(
                                 padding: const EdgeInsets.all(4.0),
                                 child: Text(
-                                  'Send',
+                                  'Enviar',
                                   style: TextStyle(
                                     fontWeight: FontWeight.w500,
                                     color: Colors.white,
@@ -102,7 +103,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
     );
   }
 
-  Widget _buildComposer() {
+  Widget _cajaDeTexto() {
     return Padding(
       padding: const EdgeInsets.only(top: 16, left: 32, right: 32),
       child: Container(
@@ -136,7 +137,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                 cursorColor: Colors.blue,
                 decoration: InputDecoration(
                     border: InputBorder.none,
-                    hintText: 'Enter your feedback...'),
+                    hintText: 'Escribe...'),
               ),
             ),
           ),

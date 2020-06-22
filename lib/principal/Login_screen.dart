@@ -54,6 +54,7 @@ class _LoadingScreenState extends State<LoginScreen> {
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () {
+          //Interaccion a FitnessApp
           Navigator.push(
               context,
               MaterialPageRoute(
@@ -85,11 +86,15 @@ class _LoadingScreenState extends State<LoginScreen> {
           children: <Widget>[
             logo,
             SizedBox(height: 48.0),
+            //Widget Email
             email,
             SizedBox(height: 8.0),
+            //Widget Password
             password,
             SizedBox(height: 24.0),
+            //Widget ButtonLogin
             loginButton,
+            //Widget Forgot(OlvidasteContraseña)
             forgotLabel
           ],
         ),

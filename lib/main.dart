@@ -45,13 +45,13 @@ class HexColor extends Color {
     7)Canvas
     8)Button Center
   C3:Navegabilidad(8)
-    1)
-    2)
-    3)
-    4)
-    5)
-    6)
-    7)
+    1)Interaccion a LoginScreen -> navigation_home_screen.dart
+    2)Interaccion a FitnessApp -> Login.dart
+    3)Interaccion a HelpScreen -> navigation_home_screen.dart
+    4)Interaccion a FeedbackScreen -> navigation_home_screen.dart
+    5)Interaccion a InviteFriend -> navigation_home_screen.dart
+    6)Interaccion a CompartirApp -> navigation_home_screen.dart
+    7)Interaccion a AcercaDe -> navigation_home_screen.dart
     8)
   C4:Interfaces(6)
     1)Login
@@ -62,12 +62,12 @@ class HexColor extends Color {
     6)Acerca De
     7)MenuFitness
   C5:Widgets(8)
-    1)
-    2)
-    3)
-    4)
-    5)
-    6)
-    7)
-    8)
+    1)RaisedButton
+    2)Widget Caja de Texto -> feedback_screen.dart
+    3)Widget de Texto e Imagenes -> invite_friend_screen.dart
+    4)Widget de Texto e Imagenes -> help_screen.dart
+    5)Widget Email -> login.dart
+    6)Widget Password -> login.dart
+    7)Widget ButtonLogin -> login.dart
+    8)Widget Forgot(OlvidasteContraseña) -> login.dart
 */
