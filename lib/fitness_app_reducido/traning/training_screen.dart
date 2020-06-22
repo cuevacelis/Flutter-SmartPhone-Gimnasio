@@ -29,7 +29,7 @@ class _TrainingScreenState extends State<TrainingScreen> {
                     top: MediaQuery.of(context).padding.top,
                     left: 16,
                     right: 16),
-                child: Image.asset('assets/images/helpImage.png'),
+                child: Image.asset('assets/fitness_app/runner.png'),
               ),
               Container(
                 padding: const EdgeInsets.only(top: 8),

@@ -31,7 +31,7 @@ class _MyDiaryScreenState extends State<MyDiaryScreen> {
                     top: MediaQuery.of(context).padding.top,
                     left: 16,
                     right: 16),
-                child: Image.asset('assets/images/helpImage.png'),
+                child: Image.asset('assets/fitness_app/area1.png'),
               ),
               Container(
                 padding: const EdgeInsets.only(top: 8),
