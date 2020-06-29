@@ -17,4 +17,4 @@ $ ( Ctrl+Mayus+D )
 
 > PD: Se uso una plantilla de Flutter
 
-![video](https://raw.githubusercontent.com/cuevacelis/Flutter-SmartPhone-Gimnasio/master/github/video.mp4)
+![gif](https://raw.githubusercontent.com/cuevacelis/Flutter-SmartPhone-Gimnasio/master/github/video.gif)
