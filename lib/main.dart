@@ -52,7 +52,7 @@ class HexColor extends Color {
     5)Interaccion a InviteFriend -> navigation_home_screen.dart
     6)Interaccion a CompartirApp -> navigation_home_screen.dart
     7)Interaccion a AcercaDe -> navigation_home_screen.dart
-    8)
+    8)Interaccion de la AppFitnes
   C4:Interfaces(6)
     1)Login
     2)Home

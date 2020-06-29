@@ -68,7 +68,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen> with Ticker
         const Expanded(//Con esto pongo la lista abajo
           child: SizedBox(),
         ),
-        //Widget de Navbar Descargado de Internet y personalizado
+        //Widget de Navbar Descargado de Internet y personalizado por mi :v 
         BottomBarView(
           tabIconsList: tabIconsList,
           addClick: () {},

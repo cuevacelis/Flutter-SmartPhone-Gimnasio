@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:best_flutter_ui_templates/principal/app_theme.dart';
-import 'package:best_flutter_ui_templates/fitness_app_reducido/fitness_app_home_screen.dart';
+import 'package:best_flutter_ui_templates/fitness_app/fitness_app_home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override

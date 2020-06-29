@@ -4,7 +4,6 @@ import 'package:best_flutter_ui_templates/principal/app_theme.dart';
 import 'package:best_flutter_ui_templates/custom_drawer/drawer_user_controller.dart';
 import 'package:best_flutter_ui_templates/custom_drawer/home_drawer.dart';
 //Navigation
-//import 'package:best_flutter_ui_templates/principal/home_screen.dart';
 import 'package:best_flutter_ui_templates/principal/help_screen.dart';
 import 'package:best_flutter_ui_templates/principal/feedback_screen.dart';
 import 'package:best_flutter_ui_templates/principal/invite_friend_screen.dart';
@@ -44,7 +43,7 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
               //devolución de llamada desde el cajón para reemplazar la pantalla según lo requerido el usuario al pasar DrawerIndex (índice Enum)
             },
             screenView: screenView,
-            //Reemplazamos la vista de pantalla como necesitamos en las pantallas de inicio de navegación como Mi página de inicio, Pantalla de ayuda, Pantalla de comentarios, etc.
+            //Reemplazamos la vista de pantalla como necesitamos 
           ),
         ),
       ),
